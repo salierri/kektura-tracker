@@ -3,7 +3,6 @@ import sections from "../data/okt_sections"
 import { setCompleted } from "../redux/store";
 
 export default function SectionList() {
-
   const dispatch = useDispatch();
 
   const changeCompleted = (id, event) => {
