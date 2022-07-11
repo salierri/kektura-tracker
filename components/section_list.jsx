@@ -1,9 +1,18 @@
-import { useDispatch } from "react-redux";
+import { useEffect, useState } from "react";
+import { useDispatch, useStore } from "react-redux";
 import sections from "../data/okt_sections"
-import { setCompleted } from "../redux/store";
+import { setCompleted, loadCompletedState } from "../redux/store";
 
 export default function SectionList() {
+  const [completeList, setCompleteList] = useState(Array(27).fill(false));
   const dispatch = useDispatch();
+  
+  // Just because next.js is a pain and raises hydration errors otherwise
+  useEffect(() => {
+    const loadedData = Array(27).fill(false).map((_, index) => window.localStorage.getItem(index) === "true");
+    dispatch(loadCompletedState(loadedData));
+    setCompleteList(loadedData);
+  });
 
   const changeCompleted = (id, event) => {
     dispatch(setCompleted({id: id, value: event.target.checked }));
@@ -22,7 +31,7 @@ export default function SectionList() {
                 <h5 className="d-inline">{section.start} - {section.end}</h5>
               </td>
               <td className="text-center">
-                <input type="checkbox" className="big-checkbox" onChange={e => changeCompleted(index, e)} />
+                <input type="checkbox" className="big-checkbox" checked={completeList[index]} onChange={e => changeCompleted(index, e)} />
               </td>
             </tr>
           )
