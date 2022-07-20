@@ -1,6 +1,6 @@
 # Kéktúra tracker
 
-**A devestatingly simple app for tracking your [Countrywide Blue Line](https://www.kektura.hu/) progress**
+**A devastatingly simple app for tracking your [Countrywide Blue Line](https://www.kektura.hu/) progress**
 
 Currently hosted at: [http://geltarapp.org/kektura-tracker](http://geltarapp.org/kektura-tracker)
 
