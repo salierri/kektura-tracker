@@ -1,6 +1,5 @@
 html,
 body {
-  min-width: 992px;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -22,7 +21,7 @@ a {
 }
 
 .map-svg {
-  max-width: 570px;
+  max-width: 500px;
 }
 
 .nowrap {

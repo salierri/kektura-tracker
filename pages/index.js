@@ -8,6 +8,7 @@ export default function Home() {
     <>
       <Head>
         <title>Kéktúra tracker</title>
+        <meta name="viewport" content="width=device-width, initial-scale=0.7" />
       </Head>
       <nav className="navbar navbar-expand-md navbar-dark bg-dark mb-4 invisible-small">
         <a className="navbar-brand" href="#">Kéktúra tracker</a>
@@ -23,7 +24,7 @@ export default function Home() {
             </span>
             <Map />
           </div>
-          <div id="top-progress-bar-container"  className="invisible-big">
+          <div id="top-progress-bar-container" className="invisible-big">
             <div id="top-progress-bar">
               <ProgressBar />
             </div>
