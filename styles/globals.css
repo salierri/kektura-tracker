@@ -1,5 +1,6 @@
 html,
 body {
+  min-width: 992px;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -18,4 +19,44 @@ a {
 .big-checkbox {
   width: 30px;
   height: 30px;
+}
+
+.map-svg {
+  max-width: 570px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+@media screen and (max-width:991px) {
+  .invisible-small {
+    display: none !important;
+  }
+  .margin-when-small {
+    margin-top: 205px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .invisible-big {
+    display: none;
+  }
+}
+
+#top-progress-bar {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  width: 500px;
+  margin-left: -250px;
+  background-color: white;
+}
+
+#top-progress-bar-container {
+  position: fixed;
+  left: 0px;
+  width: 100%;
+  height: 205px;
+  background-color: white;
 }

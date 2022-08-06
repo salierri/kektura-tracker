@@ -24,7 +24,7 @@ export default function SectionList() {
         { sections.map((section, index) => {
           return (
             <tr key={section.id}>
-              <td className="text-center">
+              <td className="text-center nowrap">
                 <h4 className="d-inline"><b>{section.id}</b></h4>
               </td>
               <td className="text-center">

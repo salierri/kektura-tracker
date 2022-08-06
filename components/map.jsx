@@ -8,8 +8,8 @@ export default function Map() {
   const path = (id, draw) => <path stroke={getStrokeColor(id, completed)} strokeOpacity="0.8" strokeWidth="4" strokeLinecap="square" strokeLinejoin="round" fill="none" d={draw}></path>
 
   return (
-    <div>
-      <svg pointerEvents="none" className="leaflet-zoom-animated" width="700" height="456" viewBox="10 -10 912 456">
+    <div className="text-center">
+      <svg pointerEvents="none" className="map-svg" height="456" viewBox="10 -10 750 456">
         <g>
           {path(0, "M46 253L49 252L49 250L51 250L57 244L60 245L63 242L68 249L76 252L78 247L92 258L95 258L97 262L99 262L99 264L96 265L96 269L100 275L109 274L109 272L111 271L111 273")}
           {path(1, "M111 273L114 272L116 274L117 273L121 275L121 279L119 281L117 289L119 289L119 291L121 289L125 289L123 289L123 295L121 297L122 304L119 307L121 309L120 310L125 313L129 311L135 317L139 317L142 322L146 318L154 323")}

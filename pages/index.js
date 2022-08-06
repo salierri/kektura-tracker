@@ -9,17 +9,24 @@ export default function Home() {
       <Head>
         <title>Kéktúra tracker</title>
       </Head>
-      <nav className="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+      <nav className="navbar navbar-expand-md navbar-dark bg-dark mb-4 invisible-small">
         <a className="navbar-brand" href="#">Kéktúra tracker</a>
       </nav>
       <div className="container">
         <div className="row">
-          <div className="col-lg-6">
+          <div className="col-lg-6 margin-when-small">
             <SectionList />
           </div>
           <div className="col-lg-6">
-            <ProgressBar />
+            <span className="invisible-small">
+              <ProgressBar />
+            </span>
             <Map />
+          </div>
+          <div id="top-progress-bar-container"  className="invisible-big">
+            <div id="top-progress-bar">
+              <ProgressBar />
+            </div>
           </div>
         </div>
       </div>
